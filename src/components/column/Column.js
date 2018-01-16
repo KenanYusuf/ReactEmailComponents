@@ -54,6 +54,11 @@ const Column = ({ children, className, padding, align, valign }) => {
 }
 
 Column.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  padding: PropTypes.arrayOf(PropTypes.number),
+  align: PropTypes.string,
+  valign: PropTypes.string
 }
 
 export default Column
