@@ -1,7 +1,6 @@
 {
   "name": "react-email-components",
   "version": "0.1.0",
-  "private": true,
   "main": "./src/ReactEmailComponents.js",
   "author": "Kenan Yusuf",
   "license": "ISC",
