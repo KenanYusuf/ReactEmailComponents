@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-import Padding from '../padding/Padding'
+import Padding from './Padding'
 
 const Column = ({ children, className, padding, align, valign }) => {
   const alignClasses = align ? `align align--${align}` : null

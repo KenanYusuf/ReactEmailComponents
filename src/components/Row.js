@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Padding from '../padding/Padding'
+import Padding from './Padding'
 
 const Row = ({ children, className, padding, reverse }) => {
   if (padding) {

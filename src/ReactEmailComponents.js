@@ -1,6 +1,7 @@
-import Block from './components/block/Block'
-import Row from './components/row/Row'
-import Column from './components/column/Column'
-import Spacer from './components/spacer/Spacer'
+import Container from './components/Container'
+import Block from './components/Block'
+import Row from './components/Row'
+import Column from './components/Column'
+import Spacer from './components/Spacer'
 
-export { Block, Row, Column, Spacer }
+export { Container, Block, Row, Column, Spacer }
