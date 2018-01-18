@@ -1,31 +1,35 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Demo.styl'
 import { Container, Block, Row, Column, Spacer } from '../ReactEmailComponents'
 
-class App extends Component {
-  render() {
-    return (
-      <Container>
-        <Block className="test-block">
-          Test block
-        </Block>
+const App = () => {
+  return (
+    <Container width={600}>
+      <Block padding={[ 20 ]}>
+        <h1>Block heading</h1>
+        <p>This is a block</p>
+      </Block>
 
-        <Spacer height={20} />
+      <Spacer height={20} />
 
-        <Row>
-          <Column padding={[ 5 ]} align="right">
-            Col 1
-          </Column>
-          <Column padding={[ 5 ]} align="right">
-            Col 2
-          </Column>
-          <Column padding={[ 5 ]} align="right">
-            Col 3
-          </Column>
-        </Row>
-      </Container>
-    )
-  }
+      <Row>
+        <Column padding={[ 5 ]} align="center">
+          <h2>Column 1</h2>
+          This is a column
+        </Column>
+
+        <Column padding={[ 5 ]} align="center">
+          <h2>Column 2</h2>
+          This is a column
+        </Column>
+
+        <Column padding={[ 5 ]} align="center">
+          <h2>Column 3</h2>
+          This is a column
+        </Column>
+      </Row>
+    </Container>
+  )
 }
 
 export default App

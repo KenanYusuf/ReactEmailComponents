@@ -4,7 +4,7 @@ import classNames from 'classnames'
 
 import Padding from './Padding'
 
-const Column = ({ children, className, padding, align, valign }) => {
+const Column = ({ children, className, padding, align, valign, fullDesktop }) => {
   const alignClasses = align ? `align align--${align}` : null
   const valignClasses = valign ? `valign valign--${valign}` : null
 
@@ -49,6 +49,13 @@ const Column = ({ children, className, padding, align, valign }) => {
           </Fragment>
         }
       </th>
+
+      {fullDesktop &&
+        <Fragment>
+          <template data-comment dangerouslySetInnerHTML={{ __html: '<!--[if lt mso 9]></tr></table><table style="width: 100%; border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0;"><tr><![endif]-->' }} />
+          <template data-comment dangerouslySetInnerHTML={{ __html: '<!--[if gte mso 9]></tr></table><table style="width: 100%; border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0;"><tr><![endif]-->' }} />
+        </Fragment>
+      }
     </Fragment>
   )
 }
