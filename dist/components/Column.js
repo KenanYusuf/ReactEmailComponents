@@ -39,7 +39,7 @@ var Column = function Column(_ref) {
     _react2.default.createElement(
       'th',
       {
-        className: (0, _classnames2.default)(className, alignClasses, valignClasses),
+        className: (0, _classnames2.default)('column', className, alignClasses, valignClasses),
         valign: valign
       },
       padding && _react2.default.createElement(

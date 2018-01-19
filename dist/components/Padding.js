@@ -30,7 +30,7 @@ var Padding = function Padding(_ref) {
   return _react2.default.createElement(
     _react.Fragment,
     null,
-    paddingTop && _react2.default.createElement(
+    paddingTop !== 0 && _react2.default.createElement(
       'tr',
       null,
       _react2.default.createElement(
@@ -51,7 +51,7 @@ var Padding = function Padding(_ref) {
           valign: valign,
           className: valignClasses
         },
-        (align || paddingLeft || paddingRight) && _react2.default.createElement(
+        (align || paddingLeft !== 0 || paddingRight !== 0) && _react2.default.createElement(
           'table',
           {
             align: align,
@@ -63,24 +63,24 @@ var Padding = function Padding(_ref) {
             _react2.default.createElement(
               'tr',
               null,
-              paddingLeft && _react2.default.createElement('td', { width: paddingLeft }),
+              paddingLeft !== 0 && _react2.default.createElement('td', { width: paddingLeft }),
               _react2.default.createElement(
                 'td',
                 null,
                 children
               ),
-              paddingRight && _react2.default.createElement('td', { width: paddingRight })
+              paddingRight !== 0 && _react2.default.createElement('td', { width: paddingRight })
             )
           )
         ),
-        !(align || paddingLeft || paddingRight) && _react2.default.createElement(
+        !(align || paddingLeft !== 0 || paddingRight !== 0) && _react2.default.createElement(
           _react.Fragment,
           null,
           children
         )
       )
     ),
-    paddingBottom && _react2.default.createElement(
+    paddingBottom !== 0 && _react2.default.createElement(
       'tr',
       null,
       _react2.default.createElement(
