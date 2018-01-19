@@ -1,0 +1,7 @@
+{
+  "name": "react-email-components-stylus",
+  "version": "0.1.0",
+  "main": "./lib/ReactEmailComponentsStylus.js",
+  "author": "Kenan Yusuf",
+  "license": "ISC"
+}
