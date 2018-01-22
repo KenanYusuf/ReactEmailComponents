@@ -1,6 +1,6 @@
 {
   "name": "react-email-components",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "main": "./dist/react-email-components.js",
   "author": "Kenan Yusuf",
   "license": "ISC",
