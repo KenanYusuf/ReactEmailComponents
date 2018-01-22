@@ -42,7 +42,7 @@ There are 5 layout components: Container, Block, Row, Column and Spacer. All of 
 ## Container
 The Container component should be used as a direct child of the `<body>`. It is a single-use component and only has one function: to center your email within a fixed width container.
 
-### Example
+**Example**
 ```jsx
 <body>
   <Container width={600}>
@@ -53,13 +53,14 @@ The Container component should be used as a direct child of the `<body>`. It is 
 
 This component creates a faux body which can be styled by targetting the `.container` class. The inner content (the centered bit) can be styled by targetting the `.container__inner` class.
 
-### Props
+**Props**
+
 `width` - Specify a maximum width for the inner content as a *number*. This width should ideally be the same as your desktop breakpoint on responsive emails.
 
 ## Block
 The Block component can be used to divide content. Blocks are always the same width as their parent.
 
-### Example
+**Example**
 ```jsx
 <Block className="header" padding={[ 10, 20 ]}>
   <Block className="logo" align="center" valign="middle">
@@ -68,8 +69,78 @@ The Block component can be used to divide content. Blocks are always the same wi
 </Block>
 ```
 
-### Props
-`className` - Specify classes for your Block as a *string*
+**Props**
+
+`className` - Specify classes for your Block as a *string*.
+
 `padding` - Specify padding for your Block as an *array*. Padding can be applied in a similar way to standard CSS, for example: `{[ 10, 50, 20 ]}` is the shorthand way of saying `{[ 10, 50, 20, 50 ]}`.
+
 `align` - Specify the horizontal alignment of your Block as a *string*. This can be: *left*, *center* or *right*.
+
 `valign` - Specify the vertical alignment of your Block as a *string*. This can be: *top*, *middle* or *bottom*.
+
+## Row
+The Row component is the first part of a grid-based layout. It must be used to contain Column components.
+
+**Example**
+```jsx
+<Row className="row" padding={[ 20 ]}>
+  <Column>
+    …
+  </Column>
+  <Column>
+    …
+  </Column>
+</Row>
+```
+
+**Props**
+
+`className` - Specify classes for your Row as a *string*.
+
+`padding` - Specify padding for your Row as an *array*. Padding can be applied in a similar way to standard CSS, for example: `{[ 10, 50, 20 ]}` is the shorthand way of saying `{[ 10, 50, 20, 50 ]}`.
+
+`reverse` - Specify if the columns within the Row should be reversed in order.
+
+## Column
+The Column component is the second part of a grid-based layout. It must be wrapped in a Row.
+
+**Example**
+```jsx
+<Row>
+  <Column className="one-half" padding={[ 10 ]}>
+    …
+  </Column>
+  <Column className="one-half" padding={[ 10 ]}>
+    …
+  </Column>
+</Row>
+```
+
+**Props**
+
+`className` - Specify classes for your Column as a *string*.
+
+`padding` - Specify padding for your Column as an *array*. Padding can be applied in a similar way to standard CSS, for example: `{[ 10, 50, 20 ]}` is the shorthand way of saying `{[ 10, 50, 20, 50 ]}`.
+
+`align` - Specify the horizontal alignment of your Column as a *string*. This can be: *left*, *center* or *right*.
+
+`valign` - Specify the vertical alignment of your Column as a *string*. This can be: *top*, *middle* or *bottom*.
+
+`fullDesktop` - Specify whether this column is supposed to be full width on desktop clients. Although this does not do the necessary styling for a full width column, it adds conditional comments necessary for full width columns on Outlook.
+
+## Spacer
+The Spacer component can be used to add vertical space between elements where padding is not available.
+
+**Example**
+```jsx
+<h1>Welcome</h1>
+<Spacer height={20} />
+<p>This is a test email</p>
+```
+
+**Props**
+
+`className` - Specify classes for your Spacer as a *string*.
+
+`height` - Specify the height for your Spacer as a *number*.
