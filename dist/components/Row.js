@@ -42,7 +42,7 @@ var Row = function Row(_ref) {
               null,
               _react2.default.createElement(
                 'tr',
-                { dir: reverse && 'ltr' },
+                null,
                 children
               )
             )
@@ -62,7 +62,7 @@ var Row = function Row(_ref) {
         null,
         _react2.default.createElement(
           'tr',
-          { dir: reverse && 'ltr' },
+          null,
           children
         )
       )

@@ -40,7 +40,8 @@ var Column = function Column(_ref) {
       'th',
       {
         className: (0, _classnames2.default)('column', className, alignClasses, valignClasses),
-        valign: valign
+        valign: valign,
+        dir: 'ltr'
       },
       padding && _react2.default.createElement(
         'table',
