@@ -164,4 +164,5 @@ renderHTML(<Email>, options)
 The renderHTML function requires a React component to render and some CSS to inline. In the example above, we are importing our main Email component and our processed/vanilla CSS.
 
 **Options**
+
 The options that you can specify are for Juice - the tool we are using to inline CSS. For a full list of options, check out Juice's documentation: https://github.com/Automattic/juice#options
