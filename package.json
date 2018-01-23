@@ -1,6 +1,6 @@
 {
   "name": "react-email-components",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "main": "./dist/react-email-components.js",
   "author": "Kenan Yusuf",
   "license": "ISC",
@@ -57,7 +57,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "prepublish": "npx babel ./lib/ --out-dir ./dist/"
+    "prepublish": "npx babel ./src/lib/ --out-dir ./dist/"
   },
   "jest": {
     "collectCoverageFrom": [

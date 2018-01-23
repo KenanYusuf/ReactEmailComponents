@@ -1,6 +1,6 @@
 import React from 'react'
 import './Demo.styl'
-import { Container, Block, Row, Column, Spacer } from '../ReactEmailComponents'
+import { Container, Block, Row, Column, Spacer } from '../lib/react-email-components'
 
 const App = () => {
   return (
