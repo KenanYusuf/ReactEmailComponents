@@ -1,6 +1,6 @@
 {
   "name": "clock-react-email-components-stylus",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "main": "lib/clock-react-email-components-stylus.js",
   "author": "Kenan Yusuf",
   "license": "ISC"
