@@ -15,7 +15,7 @@ const Padding = ({ padding, children, align, alignClasses, valign, valignClasses
             className="spacer"
             height={paddingTop}
           >
-            &nbsp;
+            <span className="padding-space" />
           </td>
         </tr>
       }
@@ -61,7 +61,7 @@ const Padding = ({ padding, children, align, alignClasses, valign, valignClasses
             className="spacer"
             height={paddingBottom}
           >
-            &nbsp;
+            <span className="padding-space" />
           </td>
         </tr>
       }
