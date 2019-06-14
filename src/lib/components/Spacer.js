@@ -10,7 +10,7 @@ const Spacer = ({ height, className }) => {
             className="spacer"
             height={height}
           >
-            &nbsp;
+            <span className="padding-space" />
           </td>
         </tr>
       </tbody>
