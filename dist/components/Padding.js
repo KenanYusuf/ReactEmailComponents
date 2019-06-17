@@ -39,7 +39,7 @@ var Padding = function Padding(_ref) {
           className: 'spacer',
           height: paddingTop
         },
-        '&nbsp;'
+        '\xA0'
       )
     ),
     _react2.default.createElement(
@@ -89,7 +89,7 @@ var Padding = function Padding(_ref) {
           className: 'spacer',
           height: paddingBottom
         },
-        '&nbsp;'
+        '\xA0'
       )
     )
   );
