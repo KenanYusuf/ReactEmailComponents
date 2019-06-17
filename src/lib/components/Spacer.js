@@ -11,8 +11,9 @@ const Spacer = ({ height, className }) => {
             height={height}
           >
             <span className="padding-space">
-              <img src="spacer.gif" height="1" width="5" alt="spacer gif" />
-            </span>          </td>
+              <img src="spacer.gif" height="1" width="5" alt="spacer-gif" />
+            </span>
+          </td>
         </tr>
       </tbody>
     </table>

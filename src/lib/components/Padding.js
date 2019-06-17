@@ -65,7 +65,8 @@ const Padding = ({ padding, children, align, alignClasses, valign, valignClasses
           >
             <span className="padding-space">
               <img src="spacer.gif" height="1" width="5" alt="spacer gif" />
-            </span>          </td>
+            </span>
+          </td>
         </tr>
       }
     </Fragment>
