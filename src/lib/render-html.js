@@ -12,7 +12,8 @@ const renderHTML = (component, specifiedOptions) => {
   const options = Object.assign(defaultOptions, specifiedOptions)
   const markup = ReactDOMServer.renderToStaticMarkup(component)
   const markupWithComments = markup.replace(/<(template) data-comment\b[^>]*>(.*?)<\/\1>/gm, '$2')
-  const renderedHTML = juice(markupWithComments, options)
+  const markupWithoutEscapedSpaces = markupWithComments.replace(/\xA0/g, '&nbsp;')
+  const renderedHTML = juice(markupWithoutEscapedSpaces, options)
 
   return renderedHTML
 }

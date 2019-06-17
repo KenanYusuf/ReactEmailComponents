@@ -1,6 +1,6 @@
 {
   "name": "clock-react-email-components",
-  "version": "0.1.18-beta",
+  "version": "0.1.18-beta-1",
   "main": "./dist/clock-react-email-components.js",
   "author": "Kenan Yusuf",
   "license": "ISC",
