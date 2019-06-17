@@ -33,7 +33,12 @@ var Spacer = function Spacer(_ref) {
             className: 'spacer',
             height: height
           },
-          '\xA0'
+          _react2.default.createElement(
+            'span',
+            { className: 'padding-space' },
+            _react2.default.createElement('img', { src: 'spacer.gif', height: '1', width: '5', alt: 'spacer gif' })
+          ),
+          '          '
         )
       )
     )
