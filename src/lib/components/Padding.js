@@ -15,7 +15,9 @@ const Padding = ({ padding, children, align, alignClasses, valign, valignClasses
             className="spacer"
             height={paddingTop}
           >
-            <span className="padding-space" />
+            <span className="padding-space">
+              <img src="spacer.gif" height="1" width="5" alt="spacer gif" />
+            </span>
           </td>
         </tr>
       }
@@ -61,8 +63,9 @@ const Padding = ({ padding, children, align, alignClasses, valign, valignClasses
             className="spacer"
             height={paddingBottom}
           >
-            <span className="padding-space" />
-          </td>
+            <span className="padding-space">
+              <img src="spacer.gif" height="1" width="5" alt="spacer gif" />
+            </span>          </td>
         </tr>
       }
     </Fragment>
