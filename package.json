@@ -42,7 +42,7 @@
     "postcss-loader": "2.0.8",
     "promise": "8.0.1",
     "raf": "3.4.0",
-    "react-dev-utils": "^5.0.0",
+    "react-dev-utils": "^11.0.4",
     "style-loader": "^0.19.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
