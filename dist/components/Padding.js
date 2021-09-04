@@ -39,7 +39,11 @@ var Padding = function Padding(_ref) {
           className: 'spacer',
           height: paddingTop
         },
-        '\xA0'
+        _react2.default.createElement(
+          'span',
+          { className: 'padding-space' },
+          _react2.default.createElement('img', { src: 'spacer.gif', height: '1', width: '5', alt: 'spacer gif' })
+        )
       )
     ),
     _react2.default.createElement(
@@ -89,7 +93,12 @@ var Padding = function Padding(_ref) {
           className: 'spacer',
           height: paddingBottom
         },
-        '\xA0'
+        _react2.default.createElement(
+          'span',
+          { className: 'padding-space' },
+          _react2.default.createElement('img', { src: 'spacer.gif', height: '1', width: '5', alt: 'spacer gif' })
+        ),
+        '          '
       )
     )
   );

@@ -10,7 +10,9 @@ const Spacer = ({ height, className }) => {
             className="spacer"
             height={height}
           >
-            &nbsp;
+            <span className="padding-space">
+              <img src="spacer.gif" height="1" width="5" alt="spacer-gif" />
+            </span>
           </td>
         </tr>
       </tbody>
